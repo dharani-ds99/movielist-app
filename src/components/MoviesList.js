@@ -45,7 +45,7 @@ const MoviesList = (props) => {
         <div className='container'>
             <div className='d-flex mb-3 '>
                 <h1 style={{ textAlign: 'center',border:'solid lightgreen',backgroundColor:'white' }} >My Movie List</h1>
-                <form style={{ float: 'right', marginRight: '35px' }}>
+                <form style={{ float: 'right', marginRight: '35px',top:'80px',right:'5px',position:'absolute' }}>
                     <input type="text" placeholder='search by name' value={search} onChange={handleChange} className="mr-4"/>
                     <select value={orderBy} onChange={handleSelectChange} >
                         <option value="">orderBy</option>
