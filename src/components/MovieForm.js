@@ -35,13 +35,13 @@ const MovieForm = (props) => {
 
 
     }
-    return (<div className=' border-dark border-3' style={{border:'2px solid',borderRadius:'2px',margin:'2%',padding:'2%',width:'22%',display:'inline-block',float: 'right',position:'absolute',right:0,top:95,alignItems:'center',borderColor:'lightgreen'}}>
+    return (<div className=' border-dark border-3' style={{border:'2px solid',borderRadius:'2px',margin:'2%',padding:'2%',width:'22%',display:'inline-block',float: 'right',position:'absolute',right:0,top:95,alignItems:'center',borderColor:'#6f42c1',backgroundColor:'#BFB9FA'}}>
         <h2>Add Movie</h2>
         <form onSubmit={handleSubmit} >
             <input type='text' placeholder='enter the movie name' value={movieName} onChange={handleChange} name='movieName' /><br />
             {formErrors.movieName && <span>{formErrors.movieName}</span>}
 
-            <input type='submit' value='Add' />
+            <input type='submit' style={{color:'black',backgroundColor:'#6f42c1'}} value='Add' />
             
         </form>
 
