@@ -6,9 +6,9 @@ import configureStore from '../src/store/ConfigureStore'
 import {Provider} from 'react-redux'
 
 const store=configureStore()
-console.log(store)
+//console.log(store)
 
-console.log(store.getState())
+//console.log(store.getState())
 
 store.subscribe(() => {
     console.log('state updated', store.getState())
